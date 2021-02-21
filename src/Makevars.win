@@ -1,0 +1,5 @@
+ifeq "$(WIN)" "64"
+	PKG_CFLAGS = -g3 -gdwarf-2 -m64 -msse4.1 -ffast-math
+else
+	PKG_CFLAGS = -g3 -gdwarf-2 -m32 -msse4.1 -ffast-math
+endif
