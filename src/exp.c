@@ -42,5 +42,5 @@ SEXP fv_exp(SEXP x) {
 		res->x[i] = exp_ps(sfv->x[i]);
 	}
 
-	return  fv_create(res);
+	return fv_create(res);
 }

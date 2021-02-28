@@ -8,6 +8,7 @@ R_CallMethodDef callMethods[] = {
     {"R_fv_asfvector", (DL_FUNC) &fv_asfvector, 1},
     {"R_fv_asdouble", (DL_FUNC) &fv_asdouble, 1},
     {"R_fv_exp", (DL_FUNC) &fv_exp, 1},
+    {"R_fv_log", (DL_FUNC) &fv_log, 1},
     {"R_fv_sqrt", (DL_FUNC) &fv_sqrt, 1},
     {"R_fv_add", (DL_FUNC) &fv_add, 2},
     {"R_fv_sub", (DL_FUNC) &fv_sub, 2},

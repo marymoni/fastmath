@@ -9,6 +9,7 @@
 
 typedef __v4sf vsf;
 typedef __v4si vsi;
+typedef __m128i vsl;
 
 typedef struct {
 	size_t r_len;
@@ -33,6 +34,7 @@ SEXP fv_div(SEXP x, SEXP y);
 SEXP fv_sqrt(SEXP x);
 SEXP fv_slice(SEXP x, SEXP ind);
 SEXP fv_exp(SEXP x);
+SEXP fv_log(SEXP x);
 
 #define LOG2EF 1.44269504088896341f
 

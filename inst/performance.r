@@ -9,3 +9,9 @@ microbenchmark(
     exp(v_fast),
     times = 10
 )
+
+microbenchmark(
+    log(v_regular),
+    log(v_fast),
+    times = 10
+)
