@@ -22,16 +22,16 @@ print.fvector = function(x) {
 #' Slice FastMath Vector
 #'
 #' @export
-`[.fvector` = function(x, i) {
-    .Call(R_fv_slice, x, i)
+`[.fvector` = function(x, ind) {
+    .Call(R_fv_slice, x, as.integer(ind))
 }
 
 #' Slice FastMath Vector
 #'
 #' @export
-`[[.fvector` = function(x, i) {
+`[[.fvector` = function(x, ind) {
     if (length(i) != 1) stop("")
-    .Call(R_fv_slice, x, i)
+    .Call(R_fv_slice, x, as.integer(ind))
 }
 
 #' Add Two FastMath Vectors
